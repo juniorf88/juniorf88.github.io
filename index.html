@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portefólio de Junior Ferreira, programador web em formação, a viver em Curitiba.">
+<meta name="theme-color" content="#0f1a23">
+<title>Junior Ferreira · Portefólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#sobre">Saltar para o conteúdo</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header id="top-bar">
+  <a class="logo" href="#inicio">Junior Ferreira</a>
+  <div style="display:flex;align-items:center">
+    <nav aria-label="Principal">
+      <a href="#sobre" data-link="sobre">Sobre</a>
+      <a href="#jornada" data-link="jornada">Jornada</a>
+      <a href="#projetos" data-link="projetos">Projetos</a>
+      <a href="#contato" data-link="contato">Contacto</a>
+    </nav>
+    <button class="theme-btn" id="theme" aria-label="Alternar tema claro/escuro"><i class="fa-solid fa-moon"></i></button>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" data-hue="210">
+    <p class="hero-hi reveal">Olá, eu sou o</p>
+    <h1><span class="reveal" style="--d:.1s">Junior</span><span class="reveal" style="--d:.25s">Ferreira</span></h1>
+    <p class="role reveal" style="--d:.4s">Programador backend em formação, a construir <b id="typed"></b><span class="caret" aria-hidden="true"></span></p>
+    <div class="hero-actions reveal" style="--d:.55s">
+      <a class="btn primary" href="#projetos">Ver projetos</a>
+      <a class="btn" href="#contato">Falar comigo</a>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"><span>Rolar</span><i class="fa-solid fa-chevron-down"></i></div>
+  </section>
+
+  <section id="sobre" data-hue="165">
+    <h2 class="section-title reveal">Sobre mim</h2>
+    <p class="lead reveal">Sou apaixonado por tecnologia e programação. Este portefólio está alocado no GitHub Pages, é onde compartilho a minha evolução e os meus projetos no mundo do desenvolvimento frontend e backend.</p>
+    <ul class="facts reveal">
+      <li><i class="fa-solid fa-location-dot"></i>Curitiba, PR</li>
+      <li><i class="fa-solid fa-code"></i>Desenvolvimento web e backend</li>
+      <li><i class="fa-solid fa-seedling"></i>Em aprendizagem constante</li>
+    </ul>
+  </section>
+
+  <section id="jornada" data-hue="265">
+    <h2 class="section-title reveal">Minha jornada de estudo</h2>
+    <p class="lead reveal">Estou num processo de aprendizagem contínua, com foco no desenvolvimento web.</p>
+    <ol class="timeline" id="timeline">
+      <span class="fill" aria-hidden="true"></span>
+      <li class="reveal"><span class="tag">Base</span><h3>HTML</h3><p>Estrutura semântica e acessível para páginas web.</p></li>
+      <li class="reveal"><span class="tag">Visual</span><h3>CSS</h3><p>Layouts responsivos, tipografia e animações.</p></li>
+      <li class="reveal"><span class="tag">Colaboração</span><h3>Git e GitHub</h3><p>Gestão de repositórios e publicação de sites no GitHub Pages.</p></li>
+      <li class="reveal"><span class="tag">A seguir</span><h3>JavaScript</h3><p>Interatividade e lógica de programação no navegador.</p></li>
+    </ol>
+  </section>
+
+  <section id="projetos" data-hue="25">
+    <h2 class="section-title reveal">Meus projetos</h2>
+    <div class="projects">
+      <a class="card reveal" href="https://github.com/juniorf88/desafio-prompt-ia" target="_blank" rel="noopener">
+        <h3>desafio-prompt-ia <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+        <p>Resolução do Desafio Criativo «Simplificando Tarefas e Ganhando Foco com IA», da DIO.</p>
+        <div class="chips"><span>IA</span><span>Prompts</span><span>DIO</span></div>
+      </a>
+      <a class="card reveal" style="--d:.12s" href="https://juniorf88.github.io" target="_blank" rel="noopener">
+        <h3>juniorf88.github.io <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+        <p>A criação e configuração do meu próprio site no GitHub Pages: o que está a visitar agora.</p>
+        <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section id="contato" data-hue="340">
+    <h2 class="section-title reveal">Fale comigo</h2>
+    <p class="lead reveal">Quer conversar sobre um projeto ou uma oportunidade? Escreva-me.</p>
+    <div class="contact-list reveal">
+      <a class="contact-row" href="mailto:junior.ferreira88@icloud.com"><i class="fa-solid fa-envelope"></i>junior.ferreira88@icloud.com</a>
+      <span class="contact-row"><i class="fa-solid fa-location-dot"></i>Curitiba, PR</span>
+    </div>
+    <div class="social reveal" aria-label="Redes sociais">
+      <a class="github" href="https://github.com/juniorf88" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a class="linkedin" href="https://www.linkedin.com/in/juniorf" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a class="instagram" href="https://www.instagram.com/juniorferreira.88/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <a class="btn primary reveal" href="meu-curriculo.pdf" download><i class="fa-solid fa-file-arrow-down"></i>Baixar meu CV</a>
+  </section>
+</main>
+
+<footer><p>&copy; 2026 Junior Ferreira. Todos os direitos reservados.</p></footer>
+<button class="top" id="toTop" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
